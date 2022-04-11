@@ -10,52 +10,43 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
     <title>&#9889; Portfolio Belu</title>
   </head>
   <body>
-    <section class="flex-container-project">
+    <!--header navegacion-->
+    <section class="flex-container-project" id="aboutMe">
       <header>
-        <nav class="flex-container-headerNav">
+        <nav class="flex-container-header-nav">
           <ul class="project-ul">
-            <li class="listNav"><a href="#aboutMe">HOLA</a></li>
-            <li class="listNav"><a href="#skills">CONOCIMIENTOS</a></li>
-            <li class="listNav"><a href="#myProjects">PROYECTOS</a></li>
-            <li class="listNav contactMe">
-              <a href="#contact" style="color: white">CONTACTO</a>
+            <li class="list-nav"><a href="#aboutMe" class="a-nav">HOLA</a></li>
+            <li class="list-nav"><a href="#skills" class="a-nav">CONOCIMIENTOS</a></li>
+            <li class="list-nav"><a href="#myProjects" class="a-nav">PROYECTOS</a></li>
+            <li class="list-nav button1">
+              <a href="#contact" style="color: white" class="a-nav">CONTACTO</a>
             </li>
           </ul>
         </nav>
       </header>
-<!--abouteMe-->
-      <section class="flex-container-aboutMe">
-        <a name="aboutMe">
+      <!--abouteMe-->
+      <section class="flex-container-about-me">
+        <!-- <a name="aboutMe"> -->
           <div class="container-one">
-            <h3 class="abouteMe-text-one">
-              ¡Hola! Soy
-              <!-- <strong class="name"
-                style="
-                  color: rgb(147, 142, 218);
-                  text-shadow: 3px 2px 2px rgb(66, 65, 65);
-                "
-                >BELU</strong
-              > -->
-            </h3>
-            <h1 class="abouteMe-text-two">Belu Sanchez</h1>
-            <p class="abouteMe-text-three">Desarrolladora frontend y amante del diseño</p>
-            <p class="enlace-aboutMe">
-              <a href="#myProjects" style="color: white">LO QUE HAGO</a>
-            </p>
-          </div>
+            <h3 class="about-me-text-one">¡Hola! Soy</h3>
+            <h1 class="about-me-text-two">Belu Sánchez</h1>
+            <p class="about-me-text-three">Desarrolladora frontend y amante del diseño.</p>
+            <a href="#myProjects" class="button-about-me"style="color: white">LO QUE HAGO</a>   
+         </div>
+
           <div class="container-two">
-            <img
-              src="../clase_12_profolio/Imagen/undraw_proud_coder_re_exuy (1).svg"
-              class="imagen"
-            />
+            <img src="../clase_12_profolio/Imagen/undraw_proud_coder_re_exuy (1).svg" class="imagen"/></a>
           </div>
-        </a>
       </section>
-<!--skills-->
-      <section class="flex-container-skills">
+     <!--skills-->
+      <section class="flex-container-skills" id="skills">
         <article class="uno">
           <h2 class="title-skills">
             <a name="skills" style="color: black">Mis conocimientos</a>
@@ -112,28 +103,23 @@
           </section>
         </acticle>
       </section>
-<!--cita-->
+      <!--cita-->
       <section class="flex-container-cita">
-      <cita class="cita" > 
-      <div><i class="fa-solid fa-quote-right"></i></div>
-      <p class="cita-text">Si puedes superar esa sensación de estar asustado, esa sensación de riesgo, pueden suceder cosas realmente asombrosas.</p>
-      <h4 class="cita-firma">Marissa Mayer</h4>
-    
-    </cita>
-    </section>
+        <cita class="cita" > 
+          <div><i class="fa-solid fa-quote-right"></i></div>
+          <p class="cita-text">Si puedes superar esa sensación de estar asustado,<br>esa sensación de riesgo,<br>pueden suceder cosas realmente asombrosas.</p>
+          <h4 class="cita-firma">Marissa Mayer</h4>
+        </cita>
+      </section>
 
 
-<!--myProjects-->
-      <section class="flex-container-myProjects"><a name="myProjects"> </a>
+      <!--myProjects-->
+      <section class="flex-container-myProjects" id="myProjects"><a name="myProjects"> </a>
         <article class="container-myProjects">      
-          <h2 class="title-myProjects">
-            <a name="projects" style="color: black">Mis proyectos</a>
-          </h2>
+          <h2 class="title-myProjects"><a name="projects" style="color: black">Mis proyectos</a></h2>
           
-          <p class="paragraph-projects">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
-            laudantium debitis officiis porro ad assumenda mollitia,
-          </p>
+          <p class="paragraph-projects">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+            laudantium debitis officiis porro ad assumenda mollitia,</p>
 
           <section class="flex-container-projects">
             <div class="container-projects">
@@ -183,34 +169,26 @@
       </section>
 
       <!--contactMe-->
-      <section class="contact"><a name="contact"></a></section>
-
-
-
-
-
-
-
+      <section class="contact" id="contact"><a name="contact"></a></section>
+      
       <!--fotter-->
       <footer>
         <nav class="flex-footerNav">
             <ul class="footer-ul">
-              <li class="footerNav"><a href="#aboutMe">HOLA</a></li>
-              <li class="footerNav"><a href="#skills">CONOCIMIENTOS</a></li>
-              <li class="footerNav"><a href="#myProjects">PROYECTOS</a></li>
-              <li class="footerNav"><a href="#contact" >CONTACTO</a></li>
+              <li class="footerNav"><a href="#aboutMe" class="a-footer">HOLA</a></li>
+              <li class="footerNav"><a href="#skills" class="a-footer">CONOCIMIENTOS</a></li>
+              <li class="footerNav"><a href="#myProjects" class="a-footer">PROYECTOS</a></li>
+              <li class="footerNav"><a href="#contact" class="a-footer">CONTACTO</a></li>
             </ul>
     
-      </nav>
-
-
-      <section class="footerSocialLinks"> 
-        <div><i class="fa-brands fa-twitter"></i></div>
-        <div><i class="fa-brands fa-instagram-square"></i></div>
-        <div><i class="fa-brands fa-linkedin"></i></div>
-        <div><i class="fa-solid fa-at"></i></div>
-      </section>
-      <p>Hecho con por &#128159; Belu</p>
+        </nav>
+        <section class="footerSocialLinks"> 
+           <div><i class="fa-brands fa-twitter i-footer"></i></div>
+          <div><i class="fa-brands fa-instagram-square i-footer"></i></div>
+          <div><i class="fa-brands fa-linkedin i-footer"></i></div>
+         <div><i class="fa-solid fa-at i-footer"></i></div>
+        </section>
+        <p class="authorship">Hecho con &#128159; por Belu</p>
       </footer>
 
 

@@ -3,125 +3,147 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 .flex-container-project {
   display: flex;
   display: inline;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.flex-container-headerNav,
+.flex-container-header-nav,
 .project-ul {
   background-color: rgb(92, 111, 162);
   width: 100%;
-  height: 90px;
+  height: 6em;
   display: flex;
   justify-content: flex-end;
-  margin-right: 200px;
+  margin-right: 10%;
+  position: fixed;
 }
 
-.listNav,
-.contactMe {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+.flex-container-header-nav {
+  box-shadow: 0px 2px 10px rgb(83, 82, 83);
+}
+
+.list-nav,
+.button1 {
+  font-size: 1em;
   font-weight: 100;
-  margin: 30px 20px 30px 15px;
+  margin: 30px 40px 30px 5px;
   display: flex;
   align-items: center;
 }
-a {
-  text-decoration: none;
+
+.a-nav {
+  text-decoration: wavy;
   color: rgb(204, 224, 135);
 }
 
-.contactMe {
-  background-color: rgb(51, 74, 139);
-  border-radius: 100px;
-  width: 130px;
-  padding: 10px;
+.a-nav:hover {
+  color: rgb(51, 74, 139);
 }
 
+.button1 {
+  background-color: rgb(51, 74, 139);
+  padding: 0em 2em;
+  border-radius: 1.7em;
+}
+
+.button1:hover {
+  background-color: rgb(204, 224, 135);
+}
+
+
+
+
+
 /* <!--aboutMe--> */
-.flex-container-aboutMe {
+.flex-container-about-me {
   width: 100%;
-  height: 1000px;
+  height: 58em;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  line-height: 60px;
-  text-align: center;
+  line-height: 400%;
 }
 
 .container-one {
-  width: 500px;
-  height: 300px;
+  width: 35em;
+  height: 17em;
 }
 
 .container-two {
-  width: 600px;
+  width: 30em;
 }
 
 .container-one,
 .container-two {
-  /* border: solid black;  */
-  margin: 60px;
+  margin: 2em;
   display: inline-block;
 }
+
 .imagen {
   width: 100%;
 }
-.abouteMe-text-one {
+
+.about-me-text-one {
   color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 30px;
+  font-size: 2em;
 }
-.name {
-  font-size: 40px;
-}
-.abouteMe-text-two {
+
+.about-me-text-two {
   color: rgb(204, 224, 135);
-  font-size: 400%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4em;
   text-shadow: 5px 3px 2px rgb(83, 82, 83);
 }
-.abouteMe-text-three {
+
+.about-me-text-three {
   color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 10px;
+  margin: 0.5em;
   font-weight: 100;
-  font-size: 150%;
+  font-size: 1em;
 }
-.enlace-aboutMe {
+
+.button-about-me {
   background-color: rgb(147, 142, 218);
-  border-radius: 100px;
-  color: rgb(204, 224, 135);
-  margin: 20px 120px 10px 120px;
-  padding: 5px;
-  font-size: 150%;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+  text-decoration: wavy;
 }
+
+.button-about-me:hover {
+  background-color: rgb(204, 224, 135);
+
+}
+
+
+
+
+
+
 
 /* <!--skills--> */
 .flex-container-skills {
   background-color: rgb(243, 240, 240);
   width: 100%;
-  height: 1600px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 73em;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-article {
-  height: 1000px;
-}
+
 .title-skills {
-  font-size: 50px;
-  padding: 70px;
+  font-size: 3em;
+  padding: 0.5em;
 }
+
 .paragraph-skills {
-  font-size: 20px;
-  margin-left: 150px;
-  margin-right: 150px;
+  font-size: 1.2em;
+  margin-left: 25em;
+  margin-right: 25em;
 }
 
 .flex-container-skills-two {
@@ -129,33 +151,36 @@ article {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 70px;
+  margin: 5em 10em 2em 10em;
 }
 
 .container-skills {
-  width: 250px;
-  height: 250px;
+  width: 17em;
+  height: 17em;
   background-color: white;
-  margin: 20px;
+  margin: 0.8em;
   border: solid rgb(197, 193, 193);
-  border-radius: 20px;
-  padding: 50px;
-  font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 0.2em;
+  padding: 4em 1em;
+  font-size: 1em;
   font-weight: 700;
 }
+
+.container-skills:hover {
+  border: solid;
+  color: rgb(147, 142, 218);
+}
+
 img {
-  width: 90px;
+  width: 7em;
 }
-.program {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
+
+
 /* <--!cita--> */
 .flex-container-cita {
   background-color: rgb(92, 111, 162);
   width: 100%;
-  height: 555px;
+  height: 30em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,24 +188,20 @@ img {
 
 .cita {
   text-align: center;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 1.2em;
+  line-height: 2em;
   color: rgb(9, 30, 88);
-}
-.fa-quote-right {
-  font-size: 100px;
+  font-weight: bold;
 }
 
-.cita-text {
-  color: rgb(9, 30, 88);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+.fa-quote-right {
+  font-size: 4em;
 }
 
 .cita-firma {
   color: rgb(204, 224, 135);
-  font-size: 200%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
+  line-height: 4em;
   font-weight: bold;
   text-shadow: 5px 3px 2px rgb(83, 82, 83);
 }
@@ -190,67 +211,63 @@ img {
 .flex-container-myProjects {
   background-color: rgb(243, 240, 240);
   width: 100%;
-  height: 1800px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 90em;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container-myProjects {
-  height: 1600px;
-}
-
 .title-myProjects {
-  font-size: 50px;
-  padding: 70px;
+  font-size: 3em;
 }
-.paragraph-projects {
-  font-size: 20px;
 
-  margin-left: 150px;
-  margin-right: 150px;
+.paragraph-projects {
+  font-size: 1.2em;
+  margin: 1em 25em 1em 25em;
 }
+
 .flex-container-projects {
+  width: 65em;
+  height: 65em;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 70px;
+  margin-left: 12em;
 }
+
 .container-projects {
   background-color: white;
-  width: 300px;
-  height: 250px;
-  margin: 20px;
+  width: 20em;
+  height: 20em;
+  margin: 0.7em;
   border: solid rgb(197, 193, 193);
-  border-radius: 10px;
-  padding: 50px;
-  font-size: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 0.4em;
+  padding: 1em 0.5em;
+  font-size: 1em;
   font-weight: 700;
 }
-.img-projects {
-  width: 150px;
-  height: 100px;
+
+.container-projects:hover {
+  border: solid;
+  color: rgb(147, 142, 218);
 }
-.work {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
+.img-projects {
+  width: 15em;
+  height: 15em;
 }
 
 /* <!--- contacto---> */
 .contact {
   width: 100%;
-  height: 700px;
+  height: 40em;
 }
 
 /* <!--footer---> */
 footer {
   background-color: rgb(92, 111, 162);
   width: 100%;
-  height: 250px;
+  height: 15em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,26 +276,65 @@ footer {
 
 .footerNav,
 .footer-ul {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 100;
-  margin: 5px 20px 10px 5px;
+  margin: 1em;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+}
+
+.a-footer {
+  text-decoration: wavy;
+  color: rgb(204, 224, 135);
 }
 
 .footerSocialLinks,
 i {
   color: rgb(9, 30, 88);
   display: flex;
-  font-size: 30px;
-  padding: 5px 30px 5px 5px;
+  font-size: 1.2em;
+  padding: 0.5em;
 }
 
-p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 15px;
-  margin: 20px;
+.i-footer:hover {
+  color: rgb(147, 142, 218);
+}
+
+.authorship {
+  font-size: 1em;
+  margin: 1em;
   color: rgb(9, 30, 88);
+}
+
+/* media querys */
+
+@media screen and (min-width:820px) and (max-width:1025px) {
+  .flex-container-header-nav {
+    display: none;
+  }
+
+  .flex-container-about-me {
+    height: 75em;
+  }
+
+  .abouteMe-text-one {
+    font-size: 2em;
+  }
+
+  .abouteMe-text-two {
+    font-size: 3.5em;
+  }
+
+  .abouteMe-text-three {
+    font-size: 1.2em;
+  }
+
+  .enlace-aboutMe {
+    margin: 20px 120px 10px 120px;
+    padding: 1px 30px;
+    font-size: 1em;
+  }
+
 }
