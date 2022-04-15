@@ -18,7 +18,7 @@
   </head>
   <body>
     <!--header navegacion-->
-    <section class="flex-container-project" id="aboutMe">
+    <section class="flex-container-project" id="aboutMe"> <a id="porfolio"> </a>
       <header>
         <nav class="flex-container-header-nav">
           <ul class="project-ul">
@@ -42,7 +42,7 @@
          </div>
 
           <div class="container-two">
-            <img src="../clase_12_profolio/Imagen/undraw_proud_coder_re_exuy (1).svg" class="imagen"/></a>
+            <img src="../clase_12_profolio/Imagen/undraw_proud_coder_re_exuy (1).svg" class="imagen" alt="presentation photo"/></a>
           </div>
       </section>
      <!--skills-->
@@ -122,44 +122,44 @@
             laudantium debitis officiis porro ad assumenda mollitia,</p>
 
           <section class="flex-container-projects">
-            <div class="container-projects">
-              <img  class="img-projects" src="../clase_12_profolio/Imagen/undraw_personal_website_re_c8dv.svg"
-              />
-              <p class="work" >Portfolio</p>
+           <a href="#porfolio" > <div class="container-projects" > 
+              <img  class="img-projects" src="../clase_12_profolio/Imagen/undraw_personal_website_re_c8dv.svg" alt="project image porfolio" 
+              /></a>
+              <p class="work">Portfolio</p>
             </div>
 
             <div class="container-projects">
-              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_programmer_re_owql.svg"
+              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_programmer_re_owql.svg" alt="project image generador de memes"
               />
               <p class="work" >Generador de memes</p>
             </div>
 
             <div class="container-projects">
-              <img class="img-projects"  src="../clase_12_profolio/Imagen/undraw_video_game_night_8h8m.svg"
+              <img class="img-projects"  src="../clase_12_profolio/Imagen/undraw_video_game_night_8h8m.svg" alt="project image generated from memes"
               />
               <p class="work" >Match 3</p>
             </div>
 
             <div class="container-projects">
-              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_online_payments_re_y8f2.svg"
+              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_online_payments_re_y8f2.svg" alt="expense controller project image"
               />
               <p class="work" >Controlador de gastos</p>
             </div>
 
             <div class="container-projects">
-              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_events_re_98ue.svg"
+              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_events_re_98ue.svg" alt="meeting manager project image"
               />
               <p class="work" >Administrador de reuniones</p>
             </div>
 
             <div class="container-projects">
-              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_home_screen_re_640d.svg"
+              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_home_screen_re_640d.svg" alt="project image all app"
               />
               <p class="work">Todo app</p>
             </div>
 
             <div class="container-projects">
-              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_movie_night_re_9umk.svg"
+              <img class="img-projects" src="../clase_12_profolio/Imagen/undraw_movie_night_re_9umk.svg" alt="movie finder project image"
               />
               <p class="work" >Buscador de películas</p>
             </div>
@@ -168,9 +168,78 @@
         </article>
       </section>
 
-      <!--contactMe-->
-      <section class="contact" id="contact"><a name="contact"></a></section>
-      
+      <!--form-contact-me-->
+
+      <section class="form-contact" id="contact"><a name="contact"></a>
+        <div class="form">
+          <div class="form-contact-me"> 
+            <h2 class="f-contact-me">Contactame</h2>
+            <p class="f-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Possimus porro quae modi tenetur at animi <br>doloremque in fugiat molestiae ullam nihil <br> aperiam maiores tempore distinctio quaerat, eius unde? Dicta, sequi.</p>
+            
+            <ul class="contact-social-links-ul"> 
+              
+              <li><a class="form-a-link" href="https://github.com/Belu-Sanchez">
+                <i class="fa-brands fa-github-square i-form"></i> Belu-Sanchez </a></li>
+            
+              <li><a class="form-a-link" href="https://www.instagram.com/pekebel/">
+                <i class="fa-brands fa-instagram-square i-form"></i> @Pekebel</a></li>
+
+
+
+              <li> <a class="form-a-link" href="https://www.linkedin.com/in/maria-belen-sanchez-2b25b1237/">
+                <i class="fa-brands fa-linkedin i-form"></i>Maria Belen Sanchez</a></li>
+                  
+          
+           
+           
+              <li> <a class="form-a-link" href="mailto:sanchez.belen.programadora@gmail.com">
+               <i class="fa-solid fa-square-envelope i-form"></i class="tres">sanchez.belen.programadora@gmail.com</a></li>
+                     
+                    
+            </ul>
+          </div>
+
+
+
+          <form>
+            
+          <div class="form-write-me">
+            <h2 class="f-write-me">Escribime</h2>
+              
+             <div class="hola">
+                <div><label for="nombre" class="label-nombre">Nombre *</label>
+                  <input class="first-name" type="text" id="nombre" placeholder="Belu" /></div>
+                
+                  <div>   <label for="apellidos" class="label-apellido">Apellido *</label>
+                  <input class="second-name" type="text" id="apellido" placeholder="Sanchez"></div>
+                  </div>   
+
+                <label for="email" class="label">Email *</label>
+                  <input class="email" type="text" id="email" maxlength="9" placeholder="sanchez.belen.programadora@gmail.com">
+               
+                  <label for="web" class="label">Mensaje *</label>
+                  <textarea cols="40" rows="9" placeholder="Escriba un mensaje aquí"></textarea>
+
+
+                <input class="btn" type="submit" value="Enviar">
+            </div>
+           
+            </form>
+          </div>
+        </div>  
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
       <!--fotter-->
       <footer>
         <nav class="flex-footerNav">
@@ -183,14 +252,13 @@
     
         </nav>
         <section class="footerSocialLinks"> 
-           <div><i class="fa-brands fa-twitter i-footer"></i></div>
+           <div><i class="fa-brands fa-github-square i-footer"></i></div>
           <div><i class="fa-brands fa-instagram-square i-footer"></i></div>
           <div><i class="fa-brands fa-linkedin i-footer"></i></div>
-         <div><i class="fa-solid fa-at i-footer"></i></div>
+         <div><i class="fa-solid fa-square-envelope i-footer"></i></div>
         </section>
         <p class="authorship">Hecho con &#128159; por Belu</p>
       </footer>
-
 
     </section>
 
