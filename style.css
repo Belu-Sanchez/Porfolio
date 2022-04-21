@@ -50,7 +50,6 @@
   color: rgb(30, 43, 78);
 }
 
-
 .list-nav:active {
   padding: 0em 2em;
   border-radius: 1.7em;
@@ -63,14 +62,9 @@
   border-radius: 1.7em;
 }
 
-
 .button1:hover {
   background-color: rgb(204, 224, 135);
 }
-
-
-
-
 
 /* <!--aboutMe--> */
 .flex-container-about-me {
@@ -137,11 +131,6 @@
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
 }
 
-
-
-
-
-
 /* <!--skills--> */
 .flex-container-skills {
   background-color: rgb(243, 240, 240);
@@ -193,9 +182,6 @@ img {
   width: 7em;
 }
 
-
-
-
 /* <--!cita--> */
 .flex-container-cita {
   background-color: rgb(92, 111, 162);
@@ -216,7 +202,7 @@ img {
 
 .fa-quote-right {
   font-size: 3em;
-  margin:0;
+  margin: 0;
 }
 
 .cita-firma {
@@ -249,11 +235,12 @@ img {
 }
 
 .flex-container-projects {
-  width: 65em;
-  height: 65em;
+  /* width: 65em;
+  height: 65em; */
   display: flex;
   flex-wrap: wrap;
-  margin-left: 12em;
+  /* margin-left: 12em; */
+  margin: 5em 10em 2em 10em;
 }
 
 .container-projects {
@@ -268,6 +255,15 @@ img {
   font-weight: 700;
 }
 
+.container-projects-a {
+  text-decoration: none;
+  color: black
+}
+
+.container-projects-a:hover {
+  color: rgb(147, 142, 218);
+}
+
 .container-projects:hover {
   border: solid;
   color: rgb(147, 142, 218);
@@ -276,8 +272,6 @@ img {
 .container-projects:active {
   box-shadow: 0px 1px 2px 1px rgb(147, 142, 218);
 }
-
-
 
 .img-projects {
   width: 15em;
@@ -291,7 +285,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .form {
@@ -303,7 +296,6 @@ img {
   justify-content: center;
   align-items: center;
   background-color: rgb(243, 240, 240);
-
 }
 
 .form-contact-me,
@@ -321,6 +313,8 @@ img {
 .f-description {
   font-size: 1.2em;
   font-weight: 100;
+  text-align: justify;
+  padding: 0em 2.2em 1em 1.5em;
 }
 
 .contact-social-links-ul,
@@ -331,9 +325,7 @@ i {
   margin: 0.5em;
   padding-top: 2em;
   font-size: 1.2em;
-
 }
-
 
 .i-form {
   font-size: 1em;
@@ -346,7 +338,6 @@ i {
   color: rgb(9, 30, 88);
   background-color: rgb(147, 142, 218);
 }
-
 
 .form-a-link {
   text-decoration: none;
@@ -362,37 +353,19 @@ i {
   padding: 0.5em;
   border-radius: 1.7em;
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .form-write-me {
   display: flex;
   flex-direction: column;
 }
 
-
 .hola {
   display: flex;
-
 }
-
-
 
 label {
   margin: 0.5em;
-
 }
 
 .first-name,
@@ -405,8 +378,6 @@ label {
   background-color: rgb(220, 219, 226);
   outline: none;
 }
-
-
 
 .email {
   width: 100%;
@@ -435,7 +406,6 @@ textarea {
 
 textarea:active {
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
-
 }
 
 .btn {
@@ -448,7 +418,6 @@ textarea:active {
   border: none;
 }
 
-
 .btn:hover {
   background-color: rgb(204, 224, 135);
 
@@ -457,21 +426,6 @@ textarea:active {
 .btn:active {
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* <!--footer---> */
 footer {
@@ -492,7 +446,6 @@ footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .a-footer {
@@ -505,7 +458,6 @@ footer {
   height: 2em;
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .i-footer {
@@ -527,77 +479,258 @@ footer {
   color: rgb(9, 30, 88);
 }
 
+/* media querys  */
 
+@media screen and (min-width:200px) and (max-width:479px) {
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media querys */
-
-@media screen and (min-width:320px) and (max-width:479px) {
-  .flex-container-header-nav {
+  .flex-container-header-nav,
+  .project-ul {
     display: none;
   }
 
+  /* <!--aboutMe--> */
   .flex-container-about-me {
-    border: solid red;
-    align-content: unset;
-  }
-
-  .container-one {
-    text-align: center;
-    border: solid;
-    width: 40em;
-    height: 20em;
-    line-height: 300%;
-  }
-
-  .container-two {
-    width: 22em;
-    border: solid;
+    display: flex;
+    flex-direction: column;
   }
 
   .container-one,
   .container-two {
-    margin: 2em;
+    line-height: 300%;
+    text-align: center;
   }
 
   .imagen {
-    width: 100%;
+    width: 70%;
   }
 
   .about-me-text-one {
-    color: black;
-    font-size: 1em;
+    font-size: 2em;
   }
 
   .about-me-text-two {
-    color: rgb(204, 224, 135);
-    font-size: 2.5em;
-    text-shadow: 5px 3px 2px rgb(83, 82, 83);
+    font-size: 3em;
+    text-shadow: 2px 3px 2px rgb(83, 82, 83);
   }
 
   .about-me-text-three {
-    font-size: 0.7em;
+    font-size: 1em;
+  }
+
+  .button-about-me {
+    font-size: 1em;
+  }
+
+  .button-about-me:active {
+    box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
+  }
+
+  /* <!--skills--> */
+  .flex-container-skills {
+    height: 92em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-skills {
+    font-size: 2em;
+  }
+
+  .paragraph-skills {
+    font-size: 0.8em;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  .flex-container-skills-two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container-skills {
+    width: 10em;
+    height: 10em;
+    margin: 0.4em;
+    border: solid rgb(197, 193, 193);
+    border-radius: 0.3em;
+    padding: 2em 2em;
+  }
+
+  img {
+    width: 5em;
+  }
+
+  /* <--!cita--> */
+  .flex-container-cita {
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cita {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    font-weight: 400;
+    margin: 1em;
+  }
+
+  .cita-firma {
+    font-size: 1.3em;
+    line-height: 4em;
+    text-shadow: 2px 1px 2px rgb(83, 82, 83);
+  }
+
+  /* <!--project--- */
+  .flex-container-myProjects {
+    height: 110em;
+  }
+
+  .title-myProjects {
+    font-size: 2em;
+  }
+
+  .paragraph-projects {
+    font-size: 0.8em;
+    width: 25em;
+  }
+
+  .flex-container-projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+
+  }
+
+  .container-projects {
+    width: 15em;
+    height: 15em;
+    border: solid rgb(197, 193, 193);
+    border-radius: 0.4em;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .container-projects:active {
+    box-shadow: 0px 0.5px 1px 0.5px rgb(147, 142, 218);
+  }
+
+  .img-projects {
+    width: 12em;
+    height: 10em;
+  }
+
+  /* <!--- contacto---> */
+  .form-contact {
+    height: 80em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    height: 60em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .form-contact-me,
+  .form-write-me {
+    width: 30em;
+    height: 32em;
+    padding: 0em 3em 0em 3em;
+  }
+
+  .f-contact-me,
+  .f-write-me {
+    font-size: 2em;
+  }
+
+  .f-description {
+    font-size: 1em;
+  }
+
+  .contact-social-links-ul,
+  i {
+    font-size: 1em;
+  }
+
+  .form-a-link:active {
+    padding: 0.3em;
+    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+  }
+
+  .form-write-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hola {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-name,
+  .second-name {
+    width: 100%;
+    border-radius: 1em;
+  }
+
+  .email {
+    border-radius: 1em;
+  }
+
+  input:active {
+    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+  }
+
+  textarea {
+    width: 100%;
+    padding-bottom: 10em;
+    border-radius: 1.5em;
+    border: none;
+    background-color: rgb(220, 219, 226);
+    outline: none;
+  }
+
+  textarea:active {
+    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+
+  }
+
+  .btn {
+    width: 7em;
+  }
+
+  .btn:active {
+    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
   }
 
 
+  /* <!--footer---> */
+  .footerNav,
+  .footer-ul {
+    display: none;
+  }
 
+  .footerSocialLinks {
+    margin-bottom: 2em;
+  }
 
-
+  .i-footer {
+    font-size: 1.5em;
+  }
 }
