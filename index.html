@@ -5,19 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <title>&#9889; Portfolio Belu</title>
   </head>
   <body>
-    <!--header navegacion-->
+    <!--NAVIGATION HEADER-->
     <section class="flex-container-project" id="aboutMe"> <a id="porfolio"> </a>
       <header>
         <nav class="flex-container-header-nav">
@@ -31,9 +27,8 @@
           </ul>
         </nav>
       </header>
-      <!--abouteMe-->
+      <!--ABOUT ME-->
       <section class="flex-container-about-me">
-        <!-- <a name="aboutMe"> -->
           <div class="container-one">
             <h3 class="about-me-text-one">¡Hola! Soy</h3>
             <h1 class="about-me-text-two">Belu Sánchez</h1>
@@ -45,16 +40,13 @@
             <img src="../clase_12_profolio/Imagen/undraw_proud_coder_re_exuy (1).svg" class="imagen" alt="presentation photo"/></a>
           </div>
       </section>
-     <!--skills-->
+     <!--SKILLS-->
       <section class="flex-container-skills" id="skills">
         <article class="uno">
           <h2 class="title-skills">
             <a name="skills" style="color: black">Mis conocimientos</a>
           </h2>
-          <p class="paragraph-skills">
-          
-La habilidad de dominar los siguientes lenguajes y códigos me permiten dar estilo y vida a páginas Web.
-          </p>
+          <p class="paragraph-skills"> La habilidad de dominar los siguientes lenguajes y códigos me permiten dar estilo y vida a páginas Web.</p>
 
           <section class="flex-container-skills-two">
             <div class="container-skills">
@@ -101,7 +93,7 @@ La habilidad de dominar los siguientes lenguajes y códigos me permiten dar esti
           </section>
         </acticle>
       </section>
-      <!--cita-->
+      <!--CITA-->
       <section class="flex-container-cita">
         <cita class="cita" > 
           <div><i class="fa-solid fa-quote-right"></i></div>
@@ -111,7 +103,7 @@ La habilidad de dominar los siguientes lenguajes y códigos me permiten dar esti
       </section>
 
 
-      <!--myProjects-->
+      <!--MY PROJECTS-->
       <section class="flex-container-myProjects" id="myProjects"><a name="myProjects"> </a>
         <article class="container-myProjects">      
           <h2 class="title-myProjects"><a name="projects" style="color: black">Mis proyectos</a></h2>
@@ -166,7 +158,7 @@ La habilidad de dominar los siguientes lenguajes y códigos me permiten dar esti
         </article>
       </section>
 
-      <!--form-contact-me-->
+      <!--FORM CONTACT ME-->
 
       <section class="form-contact" id="contact"><a name="contact"></a>
         <div class="form">
@@ -177,15 +169,15 @@ La habilidad de dominar los siguientes lenguajes y códigos me permiten dar esti
             
             <ul class="contact-social-links-ul"> 
               
-              <li><a class="form-a-link" href="https://github.com/Belu-Sanchez">
+              <li><a class="form-a-link" href="https://github.com/Belu-Sanchez" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github-square i-form"></i> Belu-Sanchez </a></li>
             
-              <li><a class="form-a-link" href="https://www.instagram.com/mbelu_sanchez/">
+              <li><a class="form-a-link" href="https://www.instagram.com/mbelu_sanchez/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram-square i-form"></i> @MBelu_Sanchez</a></li>
 
 
 
-              <li> <a class="form-a-link" href="https://www.linkedin.com/in/maria-belen-sanchez-2b25b1237/">
+              <li> <a class="form-a-link" href="https://www.linkedin.com/in/maria-belen-sanchez-2b25b1237/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin i-form"></i>Maria Belen Sanchez</a></li>
                   
           
@@ -207,14 +199,14 @@ La habilidad de dominar los siguientes lenguajes y códigos me permiten dar esti
               
              <div class="hola">
                 <div><label for="nombre" class="label-nombre">Nombre *</label>
-                  <input class="first-name" type="text" id="nombre" placeholder="María Belén" /></div>
+                  <input class="first-name" type="text" id="nombre" placeholder="María Belén" required/></div>
                 
                   <div>   <label for="apellidos" class="label-apellido">Apellido *</label>
-                  <input class="second-name" type="text" id="apellido" placeholder="Sánchez"></div>
+                  <input class="second-name" type="text" id="apellido" placeholder="Sánchez" required></div>
                   </div>   
 
                 <label for="email" class="label">Email *</label>
-                  <input class="email" type="text" id="email" maxlength="9" placeholder="sanchez.belen.programadora@gmail.com">
+                  <input class="email" type="text" id="email" maxlength="9" placeholder="sanchez.belen.programadora@gmail.com" required>
                
                   <label for="web" class="label">Mensaje *</label>
                   <textarea cols="40" rows="9" placeholder="Escriba un mensaje aquí"></textarea>
@@ -251,11 +243,16 @@ La habilidad de dominar los siguientes lenguajes y códigos me permiten dar esti
     
         </nav>
         <section class="footerSocialLinks"> 
-           <div><i class="fa-brands fa-github-square i-footer"></i></div>
-          <div><i class="fa-brands fa-instagram-square i-footer"></i></div>
-          <div><i class="fa-brands fa-linkedin i-footer"></i></div>
-         <div><i class="fa-solid fa-square-envelope i-footer"></i></div>
-        </section>
+
+           <div><a href="https://github.com/Belu-Sanchez" target="_blank" rel="noopener noreferrer">
+             <i class="fa-brands fa-github-square i-footer"></i></a></div>
+          <div> <a href="https://www.instagram.com/mbelu_sanchez/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram-square i-footer"></i></a></div>
+          <div><a href="https://www.linkedin.com/in/maria-belen-sanchez-2b25b1237/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin i-footer"></i></a></div>
+         <div><a href="mailto:sanchez.belen.programadora@gmail.com">
+           <i class="fa-solid fa-square-envelope i-footer"></i></a></div>
+         </section>
         <p class="authorship">Hecho con &#128159; por Belu</p>
       </footer>
 
