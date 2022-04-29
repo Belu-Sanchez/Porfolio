@@ -7,6 +7,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /*******************************************************************************
 NAVIGATION HEADER
 *******************************************************************************/
@@ -15,8 +16,8 @@ NAVIGATION HEADER
   display: inline;
 }
 
-.flex-container-header-nav,
-.project-ul {
+.flex-container-nav,
+.container-ul {
   background-color: rgb(92, 111, 162);
   width: 100%;
   display: flex;
@@ -24,12 +25,12 @@ NAVIGATION HEADER
   position: fixed;
 }
 
-.flex-container-header-nav {
+.flex-container-nav {
   box-shadow: 0px 50px 50px 50px rgb(120, 116, 120);
 }
 
 .list-nav,
-.button1 {
+.button-nav {
   font-size: 1em;
   font-weight: 100;
   margin: 30px 40px 30px 4px;
@@ -59,13 +60,13 @@ NAVIGATION HEADER
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
 }
 
-.button1 {
+.button-nav {
   background-color: rgb(51, 74, 139);
   padding: 0.5em 2em;
   border-radius: 1.7em;
 }
 
-.button1:hover {
+.button-nav:hover {
   filter: brightness(130%);
 }
 
@@ -84,22 +85,22 @@ ABOUT ME
   line-height: 400%;
 }
 
-.container-one {
+.container-about-me-one {
   width: 35em;
   padding-bottom: 3em;
 }
 
-.container-two {
+.container-about-me-two {
   width: 30em;
 }
 
-.container-one,
-.container-two {
+.container-about-me-one,
+.container-about-me-two {
   margin: 2em;
   display: inline-block;
 }
 
-.imagen {
+.image-about-me {
   width: 100%;
 }
 
@@ -141,7 +142,7 @@ ABOUT ME
 /*******************************************************************************
 SKILLS
 *******************************************************************************/
-.flex-container-skills {
+.flex-container-skills-one {
   background-color: rgb(243, 240, 240);
   width: 100%;
   text-align: center;
@@ -187,9 +188,10 @@ SKILLS
   color: rgb(147, 142, 218);
 }
 
-img {
+.image-skills {
   width: 7em;
 }
+
 /*******************************************************************************
 CITA
 *******************************************************************************/
@@ -202,7 +204,7 @@ CITA
   justify-content: center;
 }
 
-.cita {
+.container-cita {
   text-align: center;
   font-size: 1.2em;
   line-height: 2em;
@@ -224,9 +226,9 @@ CITA
 }
 
 /*******************************************************************************
-PROJECTS
+MY PROJECTS
 *******************************************************************************/
-.flex-container-myProjects {
+.flex-container-my-projects {
   background-color: rgb(243, 240, 240);
   width: 100%;
   padding-top: 5em;
@@ -236,7 +238,7 @@ PROJECTS
   justify-content: center;
 }
 
-.title-myProjects {
+.title-my-projects {
   font-size: 3em;
 }
 
@@ -284,7 +286,7 @@ PROJECTS
   box-shadow: 0px 1px 2px 1px rgb(147, 142, 218);
 }
 
-.img-projects {
+.image-projects {
   width: 15em;
   height: 15em;
 }
@@ -292,7 +294,7 @@ PROJECTS
 /*******************************************************************************
 FORM CONTACT ME
 *******************************************************************************/
-.form-contact {
+.flex-form-contact {
   width: 100%;
   padding-top: 5em;
   padding-bottom: 5em;
@@ -301,27 +303,19 @@ FORM CONTACT ME
   align-items: center;
 }
 
-.form {
-  width: 70em;
-  height: 42em;
+.form-contact {
+  width: 60em;
   border: solid rgb(197, 193, 193);
   border-radius: 1em;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: rgb(243, 240, 240);
-}
-
-.form-contact-me,
-.form-write-me {
-  width: 30em;
-  height: 32em;
 }
 
 .f-contact-me,
 .f-write-me {
   font-size: 3em;
-  padding: 0.5em;
+   padding: 0.5em;
 }
 
 .f-description {
@@ -359,8 +353,12 @@ i {
   font-weight: 300;
 }
 
+.form-a-link:hover {
+  color: rgb(147, 142, 218);
+}
 .form-a-link:hover i {
   color: rgb(51, 74, 139);
+  background-color: rgb(147, 142, 218);;
 }
 
 .form-a-link:active {
@@ -369,14 +367,14 @@ i {
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
 }
 
-.form-write-me {
+.flex-form-write-me {
   display: flex;
   flex-direction: column;
 }
 
-.hola {
+.flex-form {
   display: flex;
-}
+} 
 
 label {
   margin: 0.5em;
@@ -394,7 +392,6 @@ label {
 }
 
 .email {
-  width: 100%;
   margin: 1em;
   padding: 0.9em;
   border-radius: 1.5em;
@@ -408,23 +405,21 @@ input:active {
 }
 
 textarea {
-  width: 100%;
   margin: 0.5em;
   padding: 0.8em;
   border-radius: 1.5em;
   border: none;
   background-color: rgb(220, 219, 226);
   outline: none;
-
 }
 
 textarea:active {
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
 }
 
-.btn {
-  width: 10em;
-  height: 5em;
+.form-button {
+  width: 8em;
+  height: 3em;
   margin: 1em;
   background-color: rgb(147, 142, 218);
   padding: 0.5em 2em;
@@ -432,12 +427,11 @@ textarea:active {
   border: none;
 }
 
-.btn:hover {
+.form-button:hover {
   background-color: rgb(204, 224, 135);
-
 }
 
-.btn:active {
+.form-button:active {
   box-shadow: 0px 1px 4px 4px rgb(147, 142, 218);
 }
 
@@ -455,7 +449,7 @@ footer {
   align-items: center;
 }
 
-.footerNav,
+.footer-nav,
 .footer-ul {
   font-size: 1em;
   font-weight: 100;
@@ -470,7 +464,7 @@ footer {
   color: rgb(204, 224, 135);
 }
 
-.footerSocialLinks {
+.footer-social-links {
   width: 10em;
   height: 2em;
   display: flex;
@@ -492,7 +486,7 @@ footer {
 
 .authorship {
   font-size: 1em;
-  margin: 1em;
+  margin-top: 2em; 
   color: rgb(9, 30, 88);
 }
 
@@ -506,11 +500,12 @@ media querys
   body {
     overflow-x: hidden;
   }
+
   /*******************************************************************************  
   NAVIGATION HEADER
   *******************************************************************************/
-  .flex-container-header-nav,
-  .project-ul {
+  .flex-container-nav,
+  .container-ul {
     display: none;
   }
 
@@ -524,14 +519,14 @@ media querys
     padding-top: 3em;
   }
 
-  .container-one,
-  .container-two {
+  .container-about-me-one,
+  .container-about-me-two {
     line-height: 200%;
     text-align: center;
     margin: 0em;
   }
 
-  .imagen {
+  .image-about-me {
     width: 40%;
   }
 
@@ -556,7 +551,9 @@ media querys
     box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
   }
 
-  /* <!--skills--> */
+  /*******************************************************************************  
+  SKILLS
+  *******************************************************************************/
   .title-skills {
     font-size: 1.2em;
   }
@@ -571,28 +568,31 @@ media querys
     display: flex;
     align-items: center;
     flex-direction: column;
-  }  
+  }
 
   .container-skills {
     width: 10em;
     height: 10em;
     margin: 0.4em;
-    padding: 2em 2em; 
-  } 
+    padding: 2em 2em;
+  }
 
-  img {
+  .image-skills {
     width: 5em;
   }
 
-  /* <--!cita--> */
-  .cita {
+  /*******************************************************************************  
+  CITA
+  *******************************************************************************/
+  .container-cita {
     font-size: 0.5em;
     font-weight: 600;
   }
 
-  /* <!--project--- */
-
-  .title-myProjects {
+  /*******************************************************************************  
+  MY PROJECTS
+  *******************************************************************************/
+  .title-my-projects {
     font-size: 1.2em;
   }
 
@@ -607,47 +607,46 @@ media querys
     align-items: center;
     flex-direction: column;
     margin: 1em;
-
   }
 
   .container-projects {
     width: 13em;
-    height: 13em; 
+    height: 13em;
     font-size: 0.8em;
     font-weight: 600;
   }
 
   .container-projects:active {
     box-shadow: 0px 0.5px 1px 0.5px rgb(147, 142, 218);
-  } 
+  }
 
-  .img-projects {
+  .image-projects {
     width: 12em;
     height: 9em;
   }
 
-  /* <!--- contacto---> */
-   .form-contact {
+  /*******************************************************************************  
+  FORM CONTACT ME
+  *******************************************************************************/
+  .flex-form-contact {
     display: flex;
     flex-direction: column;
-    
   }
 
-  .form {
+  .form-contact {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: column;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-  } 
-
+  }
 
   .form-contact-me,
   .form-write-me {
     width: 20em;
-   padding-left: 4em;  
-   padding-right: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   .f-contact-me,
@@ -667,25 +666,28 @@ media querys
   .form-a-link:active {
     padding: 0.3em;
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+  }
+
+  .flex-form-write-me {
+    width: 12em; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+  }  
+
+  .flex-form {
+    display: flex;
+    flex-direction: column;  
   } 
-
-  .form-write-me {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .hola {
-    display: flex;
-    flex-direction: column;
-  }
 
   .first-name,
   .second-name {
     width: 80%;
-
   }
 
+  label {
+    font-size: 0.7em;
+  }
   .email {
     width: 80%;
   }
@@ -695,32 +697,30 @@ media querys
   }
 
   textarea {
-    width: 80%;
- 
+    width: 85%;
   }
 
   textarea:active {
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-
   }
 
-  .btn {
+  .form-button {
     width: 7em;
   }
 
-  .btn:active {
+  .form-button:active {
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
   }
 
-   /*******************************************************************************
-  footer
+  /*******************************************************************************
+  FOOTER
   *******************************************************************************/
-  .footerNav,
+  .footer-nav,
   .footer-ul {
     display: none;
   }
 
-  .footerSocialLinks {
+  .footer-social-links {
     margin-bottom: 1em;
   }
 
@@ -741,8 +741,8 @@ media querys
   /*******************************************************************************
   NAVIGATION HEADER
   *******************************************************************************/
-  .flex-container-header-nav,
-  .project-ul {
+  .flex-container-nav,
+  .container-ul {
     display: none;
   }
 
@@ -754,8 +754,8 @@ media querys
     flex-direction: column;
   }
 
-  .container-one,
-  .container-two {
+  .container-about-me-one,
+  .container-about-me-two {
     line-height: 400%;
     text-align: center;
   }
@@ -781,12 +781,13 @@ media querys
     box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
   }
 
-  .imagen {
+  .image-about-me {
     width: 80%;
   }
 
-  /* <!--skills--> */
-
+  /*******************************************************************************  
+  SKILLS
+  *******************************************************************************/
   .title-skills {
     font-size: 2.5em;
   }
@@ -803,25 +804,26 @@ media querys
     flex-wrap: wrap;
     padding: 5em;
   }
- 
+
   .container-skills {
     width: 12em;
     height: 12em;
     margin: 0.5em;
     padding: 3em;
-  } 
+  }
 
-  img {
+  .image-skills {
     width: 5em;
   }
 
-
-  /* <--!cita--> */
+  /*******************************************************************************  
+  CITA
+  *******************************************************************************/
   .flex-container-cita {
     height: 20em;
   }
 
-  .cita {
+  .container-cita {
     text-align: center;
     font-size: 1em;
     line-height: 2em;
@@ -834,9 +836,11 @@ media querys
     text-shadow: 2px 3px 3px rgb(83, 82, 83);
   }
 
-  /* <!--project--- */
-   .flex-container-myProjects {
-   padding: 5em;
+  /*******************************************************************************  
+  MY PROJECTS
+  *******************************************************************************/
+  .flex-container-myProjects {
+    padding: 5em;
   }
 
   .title-myProjects {
@@ -847,7 +851,6 @@ media querys
     font-size: 1.2em;
     margin-left: 9em;
     margin-right: 9em;
-
   }
 
   .flex-container-projects {
@@ -863,19 +866,19 @@ media querys
 
   .container-projects:active {
     box-shadow: 0px 0.5px 1px 0.5px rgb(147, 142, 218);
-  } 
+  }
 
+  /*******************************************************************************  
+  FORM CONTACT ME
+  *******************************************************************************/
 
-
-
-  /* <!--- contacto---> */
-  .form-contact {
+  .flex-form-contact {
     height: 80em;
     display: flex;
     flex-direction: column;
   }
 
-  .form {
+  .form-contact {
     height: 60em;
     display: flex;
     justify-content: center;
@@ -916,7 +919,7 @@ media querys
     flex-direction: column;
   }
 
-  .hola {
+  .flex-form {
     display: flex;
     flex-direction: column;
   }
@@ -928,6 +931,7 @@ media querys
   }
 
   .email {
+    width: 100%;
     border-radius: 1em;
   }
 
@@ -946,28 +950,26 @@ media querys
 
   textarea:active {
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-
   }
 
-  .btn {
-    width: 10em;
-    height: 5em;
-    padding: 1em;
+  .form-button {
+    width: 7em;
+    height: 3em;
   }
 
-  .btn:active {
+  .form-button:active {
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
   }
-   
+
   /*******************************************************************************
-  footer
+  FOOTER
   *******************************************************************************/
-  .footerNav,
+  .footer-nav,
   .footer-ul {
     display: none;
   }
 
-  .footerSocialLinks {
+  .footer-social-links {
     margin-bottom: 2.5em;
   }
 
@@ -988,8 +990,8 @@ media querys
   /*******************************************************************************
   NAVIGATION HEADER
   *******************************************************************************/
-  .flex-container-header-nav,
-  .project-ul {
+  .flex-container-nav,
+  .container-ul {
     display: none;
   }
 
@@ -1001,8 +1003,8 @@ media querys
     flex-direction: column;
   }
 
-  .container-one,
-  .container-two {
+  .container-about-me-one,
+  .container-about-me-two {
     line-height: 500%;
     text-align: center;
     margin: 5em;
@@ -1029,11 +1031,14 @@ media querys
     box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
   }
 
-  .imagen {
+  .image-about-me {
     width: 120%;
   }
 
-  /* <!--skills--> */
+  /*******************************************************************************  
+  SKILLS
+  *******************************************************************************/
+
 
   .title-skills {
     font-size: 3em;
@@ -1059,16 +1064,18 @@ media querys
     padding: 3em;
   }
 
-  img {
+  .image-skills {
     width: 7em;
   }
 
-  /* <--!cita--> */
+  /*******************************************************************************  
+  CITA
+  *******************************************************************************/
   .flex-container-cita {
     height: 35em;
   }
 
-  .cita {
+  .container-cita {
     text-align: center;
     font-size: 1.7em;
     line-height: 2em;
@@ -1081,7 +1088,9 @@ media querys
     text-shadow: 2px 3px 3px rgb(83, 82, 83);
   }
 
-  /* <!--project--- */
+  /*******************************************************************************  
+  MY PROJECTS
+  *******************************************************************************/
   .flex-container-myProjects {
     padding: 5em;
   }
@@ -1103,22 +1112,21 @@ media querys
     font-weight: 700;
   }
 
+  /*******************************************************************************  
+  FORM CONTACT ME
+  *******************************************************************************/
+  .flex-form-contact{
 
-
-
-  /* <!--- contacto---> */
-.form-contact{
-  padding-bottom: 10em;
-}
-  .form {
-    height: 60em;
+  }
+  
+  .form-contact {
+    margin-left: 5em;
+    margin-right: 5em;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; 
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    margin-left: 2.5em;
-    margin-bottom: 9em;
   }
 
   .f-contact-me,
@@ -1133,14 +1141,12 @@ media querys
   .contact-social-links-ul {
     width: 30em;
     height: 8em;
-  }
-
+  } 
 
   .contact-social-links-ul,
   i {
     font-size: 1.5em;
     padding: 0;
-
   }
 
   .contact-social-links-ul,
@@ -1150,7 +1156,6 @@ media querys
     margin: 0.5em;
   }
 
-
   .form-a-link:active {
     padding: 0.3em;
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
@@ -1158,29 +1163,29 @@ media querys
 
   .form-write-me {
     padding-top: 2em;
-    width: 45em;
+    width: 50em;
     padding: 1em;
     font-size: 1em;
   }
 
-  .hola {
+  /* .flex-form {
     display: flex;
-    justify-content: space-between
-  }
+    justify-content: space-around;
+  }  */
 
   label {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   .first-name,
   .second-name {
-    width: 100%;
+    width: 98%;
     border-radius: 3em;
     font-size: 0.9em;
-
   }
 
   .email {
+    width: 100%;
     border-radius: 3em;
     font-size: 0.9em;
   }
@@ -1201,35 +1206,34 @@ media querys
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
   }
 
-  .btn {
-    width: 10em;
-    height: 5em;
-    padding: 1em;
-    font-size: 1.5em;
+  .form-button {
+    width: 8em;
+    height: 4em;
+    font-size: 1em;
   }
 
-  .btn:active {
+  .form-button:active {
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
   }
 
   /*******************************************************************************
-  footer
+  FOOTER
   *******************************************************************************/
-  .footerNav,
+  .footer-nav,
   .footer-ul {
     display: none;
   }
 
-  .footerSocialLinks {
+  .footer-social-links {
     margin-bottom: 3em;
-  } 
+  }
 
-   .i-footer {
+  .i-footer {
     font-size: 2em;
   }
 
   .authorship {
     font-size: 1.2em;
-  } 
+  }
 
 }
