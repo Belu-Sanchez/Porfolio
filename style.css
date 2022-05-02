@@ -575,7 +575,7 @@ media querys
   .container-skills {
     width: 10em;
     height: 10em;
-    border: solid 0.1em;
+    border: solid 0.1em rgb(197, 193, 193);;
     margin: 0.4em;
     padding: 2em 2em;
   }
@@ -618,7 +618,7 @@ media querys
   .container-projects {
     width: 13em;
     height: 13em;
-    border: solid 0.1em;
+    border: solid 0.1em rgb(197, 193, 193);;
     font-size: 0.9em;
     font-weight: 500;
   }
