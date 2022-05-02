@@ -545,6 +545,8 @@ media querys
 
   .button-about-me {
     font-size: 0.5em;
+    text-decoration: wavy;
+    border-radius: 1.5em;
   }
 
   .button-about-me:active {
@@ -560,8 +562,8 @@ media querys
 
   .paragraph-skills {
     font-size: 0.5em;
-    margin-left: 54em;
-    margin-right: 54em;
+    margin-left: 45em;
+    margin-right: 45em;
   }
 
   .flex-container-skills-two {
@@ -589,6 +591,9 @@ media querys
     font-weight: 600;
   }
 
+  .cita-firma {
+    text-shadow: 3px 2px 1px rgb(83, 82, 83);
+  }
   /*******************************************************************************  
   MY PROJECTS
   *******************************************************************************/
@@ -1115,10 +1120,6 @@ media querys
   /*******************************************************************************  
   FORM CONTACT ME
   *******************************************************************************/
-  .flex-form-contact{
-
-  }
-  
   .form-contact {
     margin-left: 5em;
     margin-right: 5em;
