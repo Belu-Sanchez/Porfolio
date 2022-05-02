@@ -47,6 +47,7 @@ NAVIGATION HEADER
 .a-nav {
   text-decoration: wavy;
   color: rgb(204, 224, 135);
+  text-decoration: none;
 }
 
 .list-nav,
@@ -460,7 +461,7 @@ footer {
 }
 
 .a-footer {
-  text-decoration: wavy;
+  text-decoration: none;
   color: rgb(204, 224, 135);
 }
 
@@ -625,7 +626,7 @@ media querys
   }
 
   .image-projects {
-    width: 12em;
+    width: 10em;
     height: 9em;
   }
 
