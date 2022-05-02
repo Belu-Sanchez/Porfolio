@@ -545,7 +545,6 @@ media querys
 
   .button-about-me {
     font-size: 0.5em;
-    text-decoration: none;
     border-radius: 1.5em;
   }
 
@@ -562,8 +561,8 @@ media querys
 
   .paragraph-skills {
     font-size: 0.5em;
-    /* margin-left: 45em;
-    margin-right: 45em; */
+    margin-left: 52em;
+    margin-right: 52em; 
   }
 
   .flex-container-skills-two {
@@ -603,8 +602,8 @@ media querys
 
   .paragraph-projects {
     font-size: 0.5em;
-    margin-left: 4em;
-    margin-right: 4em; 
+    margin-left: 50em;
+    margin-right: 50em; 
   }
 
   .flex-container-projects {
@@ -617,8 +616,8 @@ media querys
   .container-projects {
     width: 13em;
     height: 13em;
-    font-size: 0.8em;
-    font-weight: 600;
+    font-size: 0.5em;
+    font-weight: 500;
   }
 
   .container-projects:active {
@@ -959,7 +958,7 @@ media querys
 
   .form-button {
     width: 7em;
-    height: 3em;
+    /* height: 3em; */
   }
 
   .form-button:active {
@@ -1169,11 +1168,6 @@ media querys
     font-size: 1em;
   }
 
-  /* .flex-form {
-    display: flex;
-    justify-content: space-around;
-  }  */
-
   label {
     font-size: 1.8em;
   }
@@ -1209,7 +1203,7 @@ media querys
 
   .form-button {
     width: 8em;
-    height: 4em;
+    /* height: 4em; */
     font-size: 1em;
   }
 
