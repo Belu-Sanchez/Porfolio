@@ -516,8 +516,8 @@ media querys
   .flex-container-about-me {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5em;
-    padding-top: 3em;
+    padding-bottom: 8em;
+    padding-top: 5em;
   }
 
   .container-about-me-one,
@@ -562,8 +562,8 @@ media querys
 
   .paragraph-skills {
     font-size: 0.5em;
-    margin-left: 52em;
-    margin-right: 52em; 
+    margin-left: 45em;
+    margin-right: 45em; 
   }
 
   .flex-container-skills-two {
