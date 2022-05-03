@@ -759,6 +759,8 @@ media querys
   .flex-container-about-me {
     display: flex;
     flex-direction: column;
+    padding-top: 7em;
+    padding-bottom: 7em;
   }
 
   .container-about-me-one,
