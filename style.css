@@ -45,7 +45,6 @@ NAVIGATION HEADER
 
 .list-nav,
 .a-nav {
-  text-decoration: wavy;
   color: rgb(204, 224, 135);
   text-decoration: none;
 }
@@ -180,7 +179,6 @@ SKILLS
   border: solid rgb(197, 193, 193);
   border-radius: 0.2em;
   padding: 4em 1em;
-  font-size: 1em;
   font-weight: 700;
 }
 
@@ -189,8 +187,14 @@ SKILLS
   color: rgb(147, 142, 218);
 }
 
-.image-skills {
-  width: 7em;
+.i-skills {
+  padding: 0;
+  margin: 0;
+  font-size: 7em;
+}
+
+.program {
+  margin-top: 1em;
 }
 
 /*******************************************************************************
@@ -316,7 +320,7 @@ FORM CONTACT ME
 .f-contact-me,
 .f-write-me {
   font-size: 3em;
-   padding: 0.5em;
+  padding: 0.5em;
 }
 
 .f-description {
@@ -339,8 +343,8 @@ i {
 .i-form {
   font-size: 1em;
   color: rgb(147, 142, 218);
-  padding: 0.2em;
-  border-radius: 0.3em;
+  padding: 0.3em;
+  border-radius: 50%;
 }
 
 .i-form:hover {
@@ -357,9 +361,11 @@ i {
 .form-a-link:hover {
   color: rgb(147, 142, 218);
 }
+
 .form-a-link:hover i {
   color: rgb(51, 74, 139);
-  background-color: rgb(147, 142, 218);;
+  background-color: rgb(147, 142, 218);
+  ;
 }
 
 .form-a-link:active {
@@ -375,7 +381,7 @@ i {
 
 .flex-form {
   display: flex;
-} 
+}
 
 label {
   margin: 0.5em;
@@ -476,18 +482,19 @@ footer {
   font-size: 1.3em;
   color: rgb(147, 142, 218);
   background-color: rgb(9, 30, 88);
-  padding: 0.2em;
-  border-radius: 0.3em;
+  padding: 0.5em;
+  border-radius: 50%;
 }
 
 .i-footer:hover {
   color: rgb(9, 30, 88);
   background-color: rgb(147, 142, 218);
+  border: solid rgb(9, 30, 88);
 }
 
 .authorship {
   font-size: 1em;
-  margin-top: 2em; 
+  margin-top: 3em;
   color: rgb(9, 30, 88);
 }
 
@@ -563,7 +570,7 @@ media querys
   .paragraph-skills {
     font-size: 0.5em;
     margin-left: 45em;
-    margin-right: 45em; 
+    margin-right: 45em;
   }
 
   .flex-container-skills-two {
@@ -575,13 +582,15 @@ media querys
   .container-skills {
     width: 10em;
     height: 10em;
-    border: solid 0.1em rgb(197, 193, 193);;
+    border: solid 0.1em rgb(197, 193, 193);
+    ;
     margin: 0.4em;
-    padding: 2em 2em;
+    padding: 0;
   }
 
-  .image-skills {
-    width: 5em;
+  .i-skills {
+    padding-top: 0.5em;
+    font-size: 4em;
   }
 
   /*******************************************************************************  
@@ -595,6 +604,7 @@ media querys
   .cita-firma {
     text-shadow: 1px 2px 1px rgb(83, 82, 83);
   }
+
   /*******************************************************************************  
   MY PROJECTS
   *******************************************************************************/
@@ -605,7 +615,7 @@ media querys
   .paragraph-projects {
     font-size: 0.5em;
     margin-left: 45em;
-    margin-right: 45em; 
+    margin-right: 45em;
   }
 
   .flex-container-projects {
@@ -618,7 +628,8 @@ media querys
   .container-projects {
     width: 13em;
     height: 13em;
-    border: solid 0.1em rgb(197, 193, 193);;
+    border: solid 0.1em rgb(197, 193, 193);
+    ;
     font-size: 0.9em;
     font-weight: 500;
   }
@@ -643,7 +654,7 @@ media querys
   .form-contact {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
     border: none;
     background-color: rgba(0, 0, 0, 0);
@@ -676,16 +687,16 @@ media querys
   }
 
   .flex-form-write-me {
-    width: 12em; 
+    width: 12em;
     display: flex;
     flex-direction: column;
     padding-top: 2em;
-  }  
+  }
 
   .flex-form {
     display: flex;
-    flex-direction: column;  
-  } 
+    flex-direction: column;
+  }
 
   .first-name,
   .second-name {
@@ -695,6 +706,7 @@ media querys
   label {
     font-size: 0.7em;
   }
+
   .email {
     width: 80%;
   }
@@ -733,507 +745,511 @@ media querys
 
   .i-footer {
     font-size: 1em;
-  }
-}
-
-
-
-@media screen and (min-width:480px) and (max-width:819px) {
-
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
-  /*******************************************************************************
-  NAVIGATION HEADER
-  *******************************************************************************/
-  .flex-container-nav,
-  .container-ul {
-    display: none;
-  }
-
-  /*******************************************************************************  
-  ABOUT ME
-  *******************************************************************************/
-  .flex-container-about-me {
-    display: flex;
-    flex-direction: column;
-    padding-top: 7em;
-    padding-bottom: 7em;
-  }
-
-  .container-about-me-one,
-  .container-about-me-two {
-    line-height: 400%;
-    text-align: center;
-  }
-
-  .about-me-text-one {
-    font-size: 3em;
-  }
-
-  .about-me-text-two {
-    font-size: 4em;
-    text-shadow: 2px 3px 2px rgb(83, 82, 83);
-  }
-
-  .about-me-text-three {
-    font-size: 1.2em;
-  }
-
-  .button-about-me {
-    font-size: 1.3em;
-  }
-
-  .button-about-me:active {
-    box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
-  }
-
-  .image-about-me {
-    width: 80%;
-  }
-
-  /*******************************************************************************  
-  SKILLS
-  *******************************************************************************/
-  .title-skills {
-    font-size: 2.5em;
-  }
-
-  .paragraph-skills {
-    font-size: 1.2em;
-    margin-left: 9em;
-    margin-right: 9em;
-  }
-
-  .flex-container-skills-two {
-    width: 45em;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5em;
-  }
-
-  .container-skills {
-    width: 12em;
-    height: 12em;
-    margin: 0.5em;
-    padding: 3em;
-  }
-
-  .image-skills {
-    width: 5em;
-  }
-
-  /*******************************************************************************  
-  CITA
-  *******************************************************************************/
-  .flex-container-cita {
-    height: 20em;
-  }
-
-  .container-cita {
-    text-align: center;
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 600;
-  }
-
-  .cita-firma {
-    font-size: 2em;
-    line-height: 3em;
-    text-shadow: 2px 3px 3px rgb(83, 82, 83);
-  }
-
-  /*******************************************************************************  
-  MY PROJECTS
-  *******************************************************************************/
-  .flex-container-myProjects {
-    padding: 5em;
-  }
-
-  .title-myProjects {
-    font-size: 2.5em;
-  }
-
-  .paragraph-projects {
-    font-size: 1.2em;
-    margin-left: 9em;
-    margin-right: 9em;
-  }
-
-  .flex-container-projects {
-    width: 52em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .container-projects {
-    font-weight: 600;
-  }
-
-  .container-projects:active {
-    box-shadow: 0px 0.5px 1px 0.5px rgb(147, 142, 218);
-  }
-
-  /*******************************************************************************  
-  FORM CONTACT ME
-  *******************************************************************************/
-
-  .flex-form-contact {
-    height: 80em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form-contact {
-    height: 60em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .form-contact-me,
-  .form-write-me {
-    width: 30em;
-    height: 32em;
-    padding: 0em 3em 0em 3em;
-  }
-
-  .f-contact-me,
-  .f-write-me {
-    font-size: 3em;
-  }
-
-  .f-description {
-    font-size: 1.2em;
-  }
-
-  .contact-social-links-ul,
-  i {
-    font-size: 1.2em;
-  }
-
-  .form-a-link:active {
-    padding: 0.3em;
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  .form-write-me {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex-form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .first-name,
-  .second-name {
-    width: 100%;
-    border-radius: 1em;
-  }
-
-  .email {
-    width: 100%;
-    border-radius: 1em;
-  }
-
-  input:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  textarea {
-    width: 100%;
-    padding-bottom: 10em;
-    border-radius: 1.5em;
-    border: none;
-    background-color: rgb(220, 219, 226);
-    outline: none;
-  }
-
-  textarea:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  .form-button {
-    width: 7em;
-    /* height: 3em; */
-  }
-
-  .form-button:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  /*******************************************************************************
-  FOOTER
-  *******************************************************************************/
-  .footer-nav,
-  .footer-ul {
-    display: none;
-  }
-
-  .footer-social-links {
-    margin-bottom: 2.5em;
-  }
-
-  .i-footer {
-    font-size: 1.5em;
-  }
-}
-
-
-
-@media screen and (min-width:820px) and (max-width:1024px) {
-
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
-  /*******************************************************************************
-  NAVIGATION HEADER
-  *******************************************************************************/
-  .flex-container-nav,
-  .container-ul {
-    display: none;
-  }
-
-  /*******************************************************************************  
-  ABOUT ME
-  *******************************************************************************/
-  .flex-container-about-me {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container-about-me-one,
-  .container-about-me-two {
-    line-height: 500%;
-    text-align: center;
-    margin: 5em;
-  }
-
-  .about-me-text-one {
-    font-size: 4em;
-  }
-
-  .about-me-text-two {
-    font-size: 5em;
-    text-shadow: 2px 3px 2px rgb(83, 82, 83);
-  }
-
-  .about-me-text-three {
-    font-size: 1.5em;
-  }
-
-  .button-about-me {
-    font-size: 1.3em;
-  }
-
-  .button-about-me:active {
-    box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
-  }
-
-  .image-about-me {
-    width: 120%;
-  }
-
-  /*******************************************************************************  
-  SKILLS
-  *******************************************************************************/
-
-
-  .title-skills {
-    font-size: 3em;
-  }
-
-  .paragraph-skills {
-    font-size: 1.5em;
-    margin-left: 9em;
-    margin-right: 9em;
-    font-weight: 100;
-  }
-
-  .flex-container-skills-two {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5em;
-  }
-
-  .container-skills {
-    width: 15em;
-    height: 15em;
-    margin: 0.5em;
-    padding: 3em;
-  }
-
-  .image-skills {
-    width: 7em;
-  }
-
-  /*******************************************************************************  
-  CITA
-  *******************************************************************************/
-  .flex-container-cita {
-    height: 35em;
-  }
-
-  .container-cita {
-    text-align: center;
-    font-size: 1.7em;
-    line-height: 2em;
-    font-weight: 600;
-  }
-
-  .cita-firma {
-    font-size: 1.5em;
-    line-height: 3em;
-    text-shadow: 2px 3px 3px rgb(83, 82, 83);
-  }
-
-  /*******************************************************************************  
-  MY PROJECTS
-  *******************************************************************************/
-  .flex-container-myProjects {
-    padding: 5em;
-  }
-
-  .title-myProjects {
-    font-size: 3em;
-  }
-
-  .paragraph-projects {
-    font-size: 1.5em;
-  }
-
-  .flex-container-projects {
-    width: 52em;
-  }
-
-  .container-projects {
-    font-size: 0.8em;
-    font-weight: 700;
-  }
-
-  /*******************************************************************************  
-  FORM CONTACT ME
-  *******************************************************************************/
-  .form-contact {
-    margin-left: 5em;
-    margin-right: 5em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .f-contact-me,
-  .f-write-me {
-    font-size: 3em;
-  }
-
-  .f-description {
-    font-size: 1.5em;
-  }
-
-  .contact-social-links-ul {
-    width: 30em;
-    height: 8em;
-  } 
-
-  .contact-social-links-ul,
-  i {
-    font-size: 1.5em;
-    padding: 0;
-  }
-
-  .contact-social-links-ul,
-  li {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.5em;
-  }
-
-  .form-a-link:active {
-    padding: 0.3em;
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  .form-write-me {
-    padding-top: 2em;
-    width: 50em;
-    padding: 1em;
-    font-size: 1em;
-  }
-
-  label {
-    font-size: 1.8em;
-  }
-
-  .first-name,
-  .second-name {
-    width: 98%;
-    border-radius: 3em;
-    font-size: 0.9em;
-  }
-
-  .email {
-    width: 100%;
-    border-radius: 3em;
-    font-size: 0.9em;
-  }
-
-  input:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  textarea {
-    width: 100%;
-    padding-bottom: 10em;
-    border-radius: 1.5em;
-    border: none;
-    outline: none;
-  }
-
-  textarea:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  .form-button {
-    width: 8em;
-    /* height: 4em; */
-    font-size: 1em;
-  }
-
-  .form-button:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  /*******************************************************************************
-  FOOTER
-  *******************************************************************************/
-  .footer-nav,
-  .footer-ul {
-    display: none;
-  }
-
-  .footer-social-links {
-    margin-bottom: 3em;
-  }
-
-  .i-footer {
-    font-size: 2em;
+    padding: 0.4em;
   }
 
   .authorship {
-    font-size: 1.2em;
+    margin-top: 1em;
   }
 
-}
+
+  @media screen and (min-width:480px) and (max-width:819px) {
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+  /*******************************************************************************
+    NAVIGATION HEADER
+  *******************************************************************************/
+    .flex-container-nav,
+    .container-ul {
+      display: none;
+    }
+
+  /*******************************************************************************  
+    ABOUT ME
+  *******************************************************************************/
+    .flex-container-about-me {
+      display: flex;
+      flex-direction: column;
+      padding-top: 7em;
+      padding-bottom: 7em;
+    }
+
+    .container-about-me-one,
+    .container-about-me-two {
+      line-height: 400%;
+      text-align: center;
+    }
+
+    .about-me-text-one {
+      font-size: 3em;
+    }
+
+    .about-me-text-two {
+      font-size: 4em;
+      text-shadow: 2px 3px 2px rgb(83, 82, 83);
+    }
+
+    .about-me-text-three {
+      font-size: 1.2em;
+    }
+
+    .button-about-me {
+      font-size: 1.3em;
+    }
+
+    .button-about-me:active {
+      box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
+    }
+
+    .image-about-me {
+      width: 80%;
+    }
+
+  /*******************************************************************************  
+    SKILLS
+  *******************************************************************************/
+    .title-skills {
+      font-size: 2.5em;
+    }
+
+    .paragraph-skills {
+      font-size: 1.2em;
+      margin-left: 9em;
+      margin-right: 9em;
+    }
+
+    .flex-container-skills-two {
+      width: 45em;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5em;
+    }
+
+    .container-skills {
+      width: 12em;
+      height: 12em;
+      margin: 0.5em;
+      padding: 0;
+    }
+
+    .i-skills {
+      padding-top: 0.5em;
+      font-size: 5em;
+    }
+
+  /*******************************************************************************  
+    CITA
+  *******************************************************************************/
+    .flex-container-cita {
+      height: 20em;
+    }
+
+    .container-cita {
+      text-align: center;
+      font-size: 1em;
+      line-height: 2em;
+      font-weight: 600;
+    }
+
+    .cita-firma {
+      font-size: 2em;
+      line-height: 3em;
+      text-shadow: 2px 3px 3px rgb(83, 82, 83);
+    }
+
+  /*******************************************************************************  
+    MY PROJECTS
+  *******************************************************************************/
+    .flex-container-myProjects {
+      padding: 5em;
+    }
+
+    .title-myProjects {
+      font-size: 2.5em;
+    }
+
+    .paragraph-projects {
+      font-size: 1.2em;
+      margin-left: 9em;
+      margin-right: 9em;
+    }
+
+    .flex-container-projects {
+      width: 52em;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container-projects {
+      font-weight: 600;
+    }
+
+    .container-projects:active {
+      box-shadow: 0px 0.5px 1px 0.5px rgb(147, 142, 218);
+    }
+
+  /*******************************************************************************  
+    FORM CONTACT ME
+  *******************************************************************************/
+
+    .flex-form-contact {
+      height: 80em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-contact {
+      height: 60em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .form-contact-me,
+    .form-write-me {
+      width: 30em;
+      height: 32em;
+      padding: 0em 3em 0em 3em;
+    }
+
+    .f-contact-me,
+    .f-write-me {
+      font-size: 3em;
+    }
+
+    .f-description {
+      font-size: 1.2em;
+    }
+
+    .contact-social-links-ul,
+    i {
+      font-size: 1.2em;
+    }
+
+    .form-a-link:active {
+      padding: 0.3em;
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+    .form-write-me {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .first-name,
+    .second-name {
+      width: 100%;
+      border-radius: 1em;
+    }
+
+    .email {
+      width: 100%;
+      border-radius: 1em;
+    }
+
+    input:active {
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+    textarea {
+      width: 100%;
+      padding-bottom: 10em;
+      border-radius: 1.5em;
+      border: none;
+      background-color: rgb(220, 219, 226);
+      outline: none;
+    }
+
+    textarea:active {
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+    .form-button {
+      width: 7em;
+      /* height: 3em; */
+    }
+
+    .form-button:active {
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+  /*******************************************************************************
+    FOOTER
+  *******************************************************************************/
+    .footer-nav,
+    .footer-ul {
+      display: none;
+    }
+
+    .footer-social-links {
+      margin-bottom: 2.5em;
+    }
+
+    .i-footer {
+      font-size: 1.5em;
+    }
+  }
+
+
+
+  @media screen and (min-width:820px) and (max-width:1024px) {
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+   /*******************************************************************************
+      NAVIGATION HEADER
+  *******************************************************************************/
+    .flex-container-nav,
+    .container-ul {
+      display: none;
+    }
+
+  /*******************************************************************************  
+    ABOUT ME
+  *******************************************************************************/
+    .flex-container-about-me {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-about-me-one,
+    .container-about-me-two {
+      line-height: 500%;
+      text-align: center;
+      margin: 5em;
+    }
+
+    .about-me-text-one {
+      font-size: 4em;
+    }
+
+    .about-me-text-two {
+      font-size: 5em;
+      text-shadow: 2px 3px 2px rgb(83, 82, 83);
+    }
+
+    .about-me-text-three {
+      font-size: 1.5em;
+    }
+
+    .button-about-me {
+      font-size: 1.3em;
+    }
+
+    .button-about-me:active {
+      box-shadow: 0px 0px 2px 2px rgb(147, 142, 218);
+    }
+
+    .image-about-me {
+      width: 120%;
+    }
+
+  /*******************************************************************************  
+      SKILLS
+  *******************************************************************************/
+
+
+    .title-skills {
+      font-size: 3em;
+    }
+
+    .paragraph-skills {
+      font-size: 1.5em;
+      margin-left: 9em;
+      margin-right: 9em;
+      font-weight: 100;
+    }
+
+    .flex-container-skills-two {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5em;
+    }
+
+    .container-skills {
+      width: 15em;
+      height: 15em;
+      margin: 0.5em;
+      padding: 0;
+    }
+
+    .i-skills {
+      padding-top: 0.5em;
+      font-size: 7em;
+    }
+
+  /*******************************************************************************  
+      CITA
+  *******************************************************************************/
+    .flex-container-cita {
+      height: 35em;
+    }
+
+    .container-cita {
+      text-align: center;
+      font-size: 1.7em;
+      line-height: 2em;
+      font-weight: 600;
+    }
+
+    .cita-firma {
+      font-size: 1.5em;
+      line-height: 3em;
+      text-shadow: 2px 3px 3px rgb(83, 82, 83);
+    }
+
+  /*******************************************************************************  
+      MY PROJECTS
+  *******************************************************************************/
+    .flex-container-myProjects {
+      padding: 5em;
+    }
+
+    .title-myProjects {
+      font-size: 3em;
+    }
+
+    .paragraph-projects {
+      font-size: 1.5em;
+    }
+
+    .flex-container-projects {
+      width: 52em;
+    }
+
+    .container-projects {
+      font-size: 0.8em;
+      font-weight: 700;
+    }
+
+  /*******************************************************************************  
+      FORM CONTACT ME
+  *******************************************************************************/
+    .form-contact {
+      margin-left: 5em;
+      margin-right: 5em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .f-contact-me,
+    .f-write-me {
+      font-size: 3em;
+    }
+
+    .f-description {
+      font-size: 1.5em;
+    }
+
+    .contact-social-links-ul {
+      width: 30em;
+      height: 8em;
+    }
+
+    .contact-social-links-ul,
+    i {
+      font-size: 1.5em;
+      padding: 0;
+    }
+
+    .contact-social-links-ul,
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0.5em;
+    }
+
+    .form-a-link:active {
+      padding: 0.3em;
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+    .form-write-me {
+      padding-top: 2em;
+      width: 50em;
+      padding: 1em;
+      font-size: 1em;
+    }
+
+    label {
+      font-size: 1.8em;
+    }
+
+    .first-name,
+    .second-name {
+      width: 98%;
+      border-radius: 3em;
+      font-size: 0.9em;
+    }
+
+    .email {
+      width: 100%;
+      border-radius: 3em;
+      font-size: 0.9em;
+    }
+
+    input:active {
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+    textarea {
+      width: 100%;
+      padding-bottom: 10em;
+      border-radius: 1.5em;
+      border: none;
+      outline: none;
+    }
+
+    textarea:active {
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+    .form-button {
+      width: 8em;
+      /* height: 4em; */
+      font-size: 1em;
+    }
+
+    .form-button:active {
+      box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
+    }
+
+  /*******************************************************************************
+      FOOTER
+  *******************************************************************************/
+    .footer-nav,
+    .footer-ul {
+      display: none;
+    }
+
+    .footer-social-links {
+      margin-bottom: 3em;
+    }
+
+    .i-footer {
+      font-size: 2em;
+    }
+
+    .authorship {
+      font-size: 1.2em;
+    }
+  }
