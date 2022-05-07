@@ -506,6 +506,7 @@ media querys
   html,
   body {
     overflow-x: hidden;
+    background-color: aqua;
   }
 
   /*******************************************************************************  
@@ -585,7 +586,7 @@ media querys
     margin: 0.4em;
     padding: 0;
   }
-  .container-skills:hover {
+  .container-skills:active {
     border: solid;
     color: rgb(147, 142, 218);
   }
@@ -760,6 +761,7 @@ media querys
     html,
     body {
       overflow-x: hidden;
+      background-color: red;
     }
 
     /*******************************************************************************
@@ -838,7 +840,7 @@ media querys
       padding: 0;
     }
     
-    .container-skills:hover {
+    .container-skills:active{
       border: solid;
       color: rgb(147, 142, 218);
     }
@@ -986,7 +988,6 @@ media querys
 
     .form-button {
       width: 7em;
-      /* height: 3em; */
     }
 
     .form-button:active {
@@ -1017,6 +1018,7 @@ media querys
     html,
     body {
       overflow-x: hidden;
+      background-color: blue;
     }
 
     /*******************************************************************************
@@ -1096,7 +1098,7 @@ media querys
       padding: 0;
     }
     
-    .container-skills:hover {
+    .container-skills:active {
       border: solid;
       color: rgb(147, 142, 218);
     }
