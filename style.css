@@ -149,7 +149,7 @@ SKILLS
   align-items: center;
   justify-content: center;
   padding-top: 5em;
-  padding-bottom: 5em; 
+  padding-bottom: 5em;
 }
 
 .title-skills {
@@ -180,7 +180,7 @@ SKILLS
   margin: 0.8em;
   border: solid rgb(197, 193, 193);
   border-radius: 0.2em;
-  padding: 4em 1em; 
+  padding: 4em 1em;
   font-weight: 700;
 }
 
@@ -194,8 +194,8 @@ SKILLS
 }
 
 .program {
-font-size: 1.5em;
-padding-top: 1em; 
+  font-size: 1.5em;
+  padding-top: 1em;
 }
 
 /*******************************************************************************
@@ -294,7 +294,7 @@ MY PROJECTS
 
 .image-projects {
   width: 15em;
-  height: 15em; 
+  height: 15em;
 }
 
 /*******************************************************************************
@@ -331,12 +331,13 @@ FORM CONTACT ME
   padding: 0em 2.2em 1em 1.5em;
 }
 
-.contact-social-links-ul, .i-form {
+.contact-social-links-ul,
+.i-form {
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: 0.5em;
-  padding-top: 2em; 
+  padding-top: 2em;
   font-size: 1.2em;
 }
 
@@ -494,16 +495,16 @@ footer {
 
 .authorship {
   font-size: 1em;
-  margin-top: 1em; 
+  margin-top: 1em;
   color: rgb(9, 30, 88);
 }
 
 /*******************************************************************************
-media querys 
+MEDIA QUERYS
 *******************************************************************************/
 
 
-@media screen and (min-width:820px) and (max-width:1024px)  {
+@media screen and (min-width:820px) and (max-width:1024px) {
 
   html,
   body {
@@ -583,14 +584,13 @@ media querys
   .container-skills {
     width: 16em;
   }
-  
+
   .container-skills:active {
     border: solid;
     color: rgb(147, 142, 218);
   }
 
   .i-skills {
-
     font-size: 7em;
   }
 
@@ -639,17 +639,18 @@ media querys
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .title-contact-me, .form-write-me {
+  .title-contact-me,
+  .form-write-me {
     font-size: 3em;
-  } 
+  }
 
-  .form-description{
+  .form-description {
     font-size: 1.2em;
   }
 
   .contact-social-links-ul {
     width: 30em;
-    height: 8em; 
+    height: 8em;
   }
 
   .contact-social-links-ul,
@@ -669,12 +670,11 @@ media querys
     padding: 0.3em;
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
   }
-  
+
   .first-name,
   .second-name {
     width: 90%;
   }
-
 
   input:active {
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
@@ -802,8 +802,8 @@ media querys
     margin: 0.5em;
     padding: 0;
   }
-  
-  .container-skills:active{
+
+  .container-skills:active {
     border: solid;
     color: rgb(147, 142, 218);
   }
@@ -878,7 +878,7 @@ media querys
     width: 30em;
   }
 
- .title-contact-me,
+  .title-contact-me,
   .form-write-me {
     font-size: 1em;
   }
@@ -898,7 +898,7 @@ media querys
   }
 
   .flex-form-write-me {
-     width: 30em; 
+    width: 30em;
     display: flex;
     flex-direction: column;
     padding-top: 2em;
@@ -936,7 +936,7 @@ media querys
   .form-button:active {
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
   }
-  
+
 
   /*******************************************************************************
   FOOTER
@@ -1034,10 +1034,12 @@ media querys
     text-align: center;
     font-weight: 600;
   }
+
   .container-skills:active {
     border: solid;
     color: rgb(147, 142, 218);
   }
+
   .i-skills {
     font-size: 8em;
 
@@ -1110,7 +1112,7 @@ media querys
   .form-write-me {
     width: 20em;
     padding-left: 2em;
-    padding-right: 2em; 
+    padding-right: 2em;
   }
 
   .title-contact-me,
@@ -1126,11 +1128,6 @@ media querys
   i {
     font-size: 0.5em;
   }
-/* 
-  .form-a-link:active {
-    padding: 0.3em;
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  } */
 
   .flex-form-write-me {
     width: 20em;
@@ -1141,12 +1138,9 @@ media querys
   .flex-form {
     display: flex;
     flex-direction: column;
-    padding-left: 3em;
-    padding-right: 3em; 
-   
   }
 
-  
+
 
   /*******************************************************************************
   FOOTER
