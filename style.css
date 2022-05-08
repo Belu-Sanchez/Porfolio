@@ -1109,8 +1109,8 @@ media querys
   .form-contact-me,
   .form-write-me {
     width: 20em;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 2em;
+    padding-right: 2em; 
   }
 
   .title-contact-me,
@@ -1126,56 +1126,27 @@ media querys
   i {
     font-size: 0.5em;
   }
-
+/* 
   .form-a-link:active {
     padding: 0.3em;
     box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
+  } */
 
   .flex-form-write-me {
-    width: 12em;
+    width: 20em;
     display: flex;
     flex-direction: column;
-    padding-top: 2em;
   }
 
   .flex-form {
     display: flex;
     flex-direction: column;
+    padding-left: 3em;
+    padding-right: 3em; 
+   
   }
 
-  .first-name,
-  .second-name {
-    width: 80%;
-  }
-
-  label {
-    font-size: 0.7em;
-  }
-
-  .email {
-    width: 80%;
-  }
-
-  input:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  textarea {
-    width: 85%;
-  }
-
-  textarea:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
-
-  .form-button {
-    width: 7em;
-  }
-
-  .form-button:active {
-    box-shadow: 0px 1px 2px 2px rgb(147, 142, 218);
-  }
+  
 
   /*******************************************************************************
   FOOTER
